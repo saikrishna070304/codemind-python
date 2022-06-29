@@ -1,9 +1,13 @@
-a=int(input())
-while a>9:
-    su=0
-    while a>0:
-        r=a%10;
-        su+=r
-        a=a//10
-    a=su
-print(a)
+n=int(input())
+temp=n
+while n>9:
+    s=0
+    while n>0:
+        d=n%10
+        s+=d
+        n=n//10
+    n=s
+print(s)
+
+    
+    

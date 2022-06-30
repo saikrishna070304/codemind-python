@@ -1,12 +1,9 @@
-def hcfnaive(a,b):
-    if(b==0):
-        return a
-    else:
-        return hcfnaive(b,a%b)
-  
+def gcd(a,b):
+    while a!=b:
+        if a>b:
+            a=a-b
+        else:
+            b=b-a
+    return a
 a,b=map(int,input().split())
-
-  
-# prints 12
-print (end="")
-print (hcfnaive(a,b))
+print(gcd(a,b))

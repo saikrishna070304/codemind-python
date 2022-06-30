@@ -1,10 +1,9 @@
-num=int(input())
-z=len(str(num))
-y=0
-for x in range(z):
-    if(num%10>y):
-        y=num%10
-        num=num//10     
-    else:
-       num=num//10   
-print(y)
+n=int(input())
+i=0
+lar=0
+while n>0:
+    i=n%10
+    if lar<i:
+        lar=i
+    n=n//10
+print(lar)

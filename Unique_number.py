@@ -1,8 +1,6 @@
 n=input()
-for i in range(len(n)):
-    for j in range(i,len(n)):
-        if n[i]==n[j] and i!=j:
-            print("Not Unique Number")
-            exit()
+s=set(n)
+if len(n)==len(s):
+    print('Unique Number')
 else:
-    print("Unique Number")
+    print('Not Unique Number')

@@ -1,7 +1,7 @@
-m=int(input())
+a=int(input())
 rev=0
-while m>0:
-    rev=rev*10+m%10
-    m//=10
+while a!=0:
+    h=a%10
+    rev=rev*10+h
+    a=a//10
 print(rev)
-    

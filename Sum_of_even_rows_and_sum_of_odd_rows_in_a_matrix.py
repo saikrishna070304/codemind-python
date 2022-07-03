@@ -1,12 +1,11 @@
-x , y = map(int,input().split())
-s=0
-c=0
-for i in range(x):
-    if i%2==0:
-        l = list(map(int,input().split()))
-        s += sum(l)
-    else:
-        l = list(map(int,input().split()))
-        c += sum(l)
-print(s,end=" ")
-print(c)
+n,m=map(int,input().split())
+ev=0
+od=0
+for j in range(n):
+    m=list(map(int,input().split()))
+    for i in m:
+        if j%2:
+            od=od+i
+        else:
+            ev=ev+i
+print(ev,od)

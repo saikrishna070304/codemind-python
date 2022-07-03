@@ -1,12 +1,11 @@
 a,b=map(int,input().split())
-m=list(map(int,input().split()))
 n=list(map(int,input().split()))
+m=list(map(int,input().split()))
 c=0
-N=[]
-for i in m:
-    if i not in N:
-        N.append(i)
-for i in N:
-    if i in n:
+for i in set(n):
+    if m.count(i):
         c+=1
-print(c)
+for j in set(m):
+    if n.count(j):
+        c+=1
+print(c//2)

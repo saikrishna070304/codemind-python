@@ -1,6 +1,7 @@
-x , y = map(int,input().split())
+n,m=map(int,input().split())
 s=0
-for i in range(x):
-    l = list(map(int,input().split()))
-    s += sum(l)
+for j in range(n):
+    m=list(map(int,input().split()))
+    for i in m:
+        s=s+i
 print(s)

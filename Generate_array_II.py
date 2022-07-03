@@ -1,7 +1,5 @@
-k=int(input())
-m=list(map(int,input().split()))
-n=[]
-for i in range(0,k,2):
-    for j in range(0,m[i+1]):
-        n.append(m[i])
-print(*n)
+n=int(input())
+a=list(map(int,input().split()))
+for i in range(0,n,2):
+    for j in range(a[i+1]):
+        print(a[i],end=' ')
